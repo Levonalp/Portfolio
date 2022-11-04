@@ -4,14 +4,14 @@
 }
 
 body{
-    max-width: auto; 
+    max-width: auto;
     max-height: auto;
-	margin: 0; 
+	margin: 0;
     padding: 0;
-	float: none; 
+	float: none;
     background: rgb(231, 196, 108);
     min-height: 100vh;
-    
+
 }
 .navbar{
     background-color: black;
@@ -23,10 +23,11 @@ body{
 }
 .navItems{
     display: block;
-    color: white;
+    color: rgb(19, 16, 2);
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    font-size: larger;
 
 }
 /* .navItems :hover{
@@ -42,18 +43,18 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #111111;
+    background-color: #ffffff;
     justify-content: center;
     padding-left: 0;
 }
 .footer-items{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     list-style-type: none;
     margin: 5;
     padding: 5px;
     padding: 5px;
-    
 }
+
 header{
     text-align: center;
     font-family:sans-serif;
@@ -67,4 +68,22 @@ header{
     padding-left: 35%;
     font-size: 1.5em;
     margin-bottom: 5%;
+}
+.icon-image{
+    width: 1.5em;height:1.5em;
+}
+.projects{
+    display: none;
+}
+.aboutMe{
+    display: none;
+}
+.resume{
+    display: none;
+}
+/* #aboutMebtn{
+    background-color: red;
+} */ 
+.home {
+    display: none;
 }
