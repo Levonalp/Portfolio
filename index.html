@@ -2,23 +2,204 @@
 <html>
 <head>
     <script src="app.js" async defer></script>
-    <script
+    <script>
     src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
     crossorigin="anonymous"
-    ></script>
+    </script>
     <meta charset="utf-8" />
-    <script
-    src="https://kit.fontawesome.com/6046322cd0.js"
-    crossorigin="anonymous"
-    ></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Levon Alshabi</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-</head>
+    <script src="https://kit.fontawesome.com/6046322cd0.js" crossorigin="anonymous"></script>
 <body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="./logo.jpg" class="logo">
+        <ul class="list">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </ul>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        </nav>
+        <div class="headerText">
+            <p>Software Engineer | Real Estate Appraiser</p>
+            <h1><span>Levon</span> Alshabi </h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./DSC_3670.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio est sint quia, quos, quo, sunt earum eaque fugit unde autem eveniet adipisci dolor atque ab. Illo quo totam, aperiam corrupti cupiditate odit nemo cumque accusamus. Architecto dolor culpa ea asperiores voluptates accusamus? Tempora, ex enim adipisci soluta repudiandae placeat vero!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                        <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                        <li><span>Analyzing Real Estate Values</span><br>In the US and abroad</li>
+                        <li><span>Sales Skills </span><br>Software & Real Estate foucsed</li>
+                        
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experince">
+                    <ul>
+                        <li><span>2UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                        <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div> <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>3UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                        <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p class="paraser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis laudantium aperiam repellendus, ab architecto ad. Consectetur inventore ea sint voluptatum odio sunt aperiam, repellat quaerat, neque, officiis soluta voluptas.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p class="paraser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis laudantium aperiam repellendus, ab architecto ad. Consectetur inventore ea sint voluptatum odio sunt aperiam, repellat quaerat, neque, officiis soluta voluptas.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Real Estate Appraisals </h2>
+                <p class="paraser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis laudantium aperiam repellendus, ab architecto ad. Consectetur inventore ea sint voluptatum odio sunt aperiam, repellat quaerat, neque, officiis soluta voluptas.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-user"></i>
+                <h2>Real Estate Sales</h2>
+                <p class="paraser">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis laudantium aperiam repellendus, ab architecto ad. Consectetur inventore ea sint voluptatum odio sunt aperiam, repellat quaerat, neque, officiis soluta voluptas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" id="myWork">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="./images/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connects you to the talented people around the wold</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                <img src="./images/work-2.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connects you to the talented people around the wold</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                <img src="./images/work-3.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connects you to the talented people around the wold</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="con-sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-square-phone-flip"></i>586-443-6667</p>
+            <p><i class="fa-solid fa-share-from-square"></i>lwshabee@gmail</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lalshabi/" target=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/levonalshabi/?hl=en"
+                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Levonalp/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+            <!-- <a href=""class="btn2">Download Resume</a> -->
+            <div class="contact-right">
+            <form name='submit-to-google-sheet'>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email"name= "Email" placeholder="Your Email" required>
+                <textarea  name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</body>
+
+</head>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- </head> -->
+<!-- <body>
     <nav>
     <ul class="navbar">
             <li class="navItems"><button id="homebtn">Home</button></li>
@@ -67,18 +248,8 @@
     </h2>
     </div>
 
-    <!-- <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol> -->
-    <footer>
+    
+<footer>
     <ul class="footernav">
         <li class="footer-items" id="in">
         <a href="https://www.linkedin.com/in/lalshabi/" target="_blank"
@@ -106,3 +277,4 @@
     </footer>
 </body>
 </html>
+
