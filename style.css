@@ -28,7 +28,7 @@ nav li button{
 nav{
     background-color: #ffffff;
     display: flex;
-    justify-content: center
+    justify-content: center; 
 }
 .navbar{
     padding: 0;
@@ -74,13 +74,25 @@ header{
     font-size: 50px;
     font-weight: bold;
 }
+.right-col a{
+    text-decoration: none;
+color: #ffffff;
+    position:absolute;
+    margin-top: 500px;
+    margin-left: 50px;
+}
 
 .contentBody{
+    display: flex;
+    flex: basis 65%;
+    margin-top: 15px;
     width: 30%;
     text-align: center;
     padding-left: 35%;
     font-size: 1.5em;
     margin-bottom: 5%;
+
+
 }
 .icon-image{
     width: 1.5em;height:1.5em;
@@ -111,6 +123,7 @@ header{
 	justify-content: space-around;
     margin-bottom: 50px;
     max-height: 500px;
+    margin-top: 50px;
 }
 .carousel-images {
 	width: 80%;
@@ -245,7 +258,7 @@ header{
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
-        background-color: lightgray;
+    background-color: lightgray;
 }
 .close-button:hover {
     background-color: rgb(139, 3, 3);
@@ -260,3 +273,59 @@ header{
     list-style:disc;
     margin-left: 1rem;
 }
+.trigger{
+    margin-top: 10rem;
+    margin-right: 2rem;
+    background: #010f01;
+    color: #ffffff;
+    height: 200px;
+    width:150px
+
+}
+
+@media (max-width:600px) {
+    nav{
+        display: grid;
+    justify-content: center;
+    }
+    .modal-content{
+        width: 15rem;
+    }    
+.right-col img{
+    height: 500px;
+    width: 350px;
+    padding-right: 10em;
+}
+#container{
+
+        width: 300px;
+        overflow: auto;
+        margin: 40px auto;
+        background: rgb(128, 48, 48);
+        padding-bottom: 40px;
+        border-radius: 10px;
+        margin-left: 70px;
+    }
+    .right-col a {
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+        margin-top: 500px;
+        /* margin-left: 50px; */
+        padding-right: 350px;
+        font-size: smaller;
+    }
+
+    .contentBody{
+        display: flex;
+        flex: basis 65%;
+        margin-top: 15px;
+        width: 15%;
+        text-align: center;
+        padding-left: 10%;
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+
+}
+    
