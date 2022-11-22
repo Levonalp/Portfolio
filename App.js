@@ -55,8 +55,7 @@ $(() => {
         $('.carousel-images').children().eq(currentImgIndex).css('display','block')
     })
 
-
-    $('.previous').on('click', () => {
+	$('.previous').on('click', () => {
 
         $('.carousel-images').children().eq(currentImgIndex).css('display', 'none')
 

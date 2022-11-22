@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <%- include ('./partials/head.ejs') %>
+  </head>
+
+  <body>
+ 
+<nav class="nav justify-content-center">
+  <a class="nav-link active" href="./event">Home</a>
+  <a class="nav-link" href="./event/show">Show</a>
+  <a class="nav-link active" href="./event/new">Make New</a>
+</nav>
+<div><h1>Welcome to LWA Realty</h1></div>
+<ul>
+  <% for(let i = 0; i < event.length; i++){ %>
+      <li>
+          <a href="/event/<%=event[i].id%>">
+              <%=event[i].street%>
+          </a>
+      </li>
+  <% } %>
+      <!-- 
+      <a href="/event/new">
+        <button type="button" name="button">New Event</button></a
+      > -->
+    </div>
+
+  </body>
+</html>

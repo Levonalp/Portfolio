@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <%- include ('./partials/head.ejs') %>
+  </head>
+  <body>
+
+    <a href="/event"><button type="button" name="button">Return to home</button></a>
+
+      <h1>Edit Page</h1>
+    </div>
+    <form  action="/event/<%=oneEvent.id%>?_method=PUT" method="POST">
+      <div ->
+
+
+      Date: <input type="date" name="date" value="<%=oneEvent.date%>" /><br />
+      Name: <input type="text" name="name" value="<%=oneEvent.name%>" /><br />
+      Details: <input type="text" name="details" value="<%=oneEvent.details%>" /><br />
+</div>
+      <input type="submit" value="Submit Changes" />
+    </form>
+
+</div>
+  </body>
+</html>

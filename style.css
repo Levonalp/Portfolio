@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     max-width: auto;
     max-height: auto;
@@ -14,7 +15,7 @@ body{
 } 
 nav li button{
     
-        background-color: #010f01; /* Green */
+        background-color: #010f01; 
         border: none;
         color: white;
         padding: 15px 32px;
@@ -25,6 +26,7 @@ nav li button{
         font-weight: 600;
     
 }
+
 nav{
     background-color: #ffffff;
     display: flex;
@@ -158,6 +160,17 @@ color: #ffffff;
 .carousel-images img:first-of-type {
 	display:block;
 }
+
+
+
+
+
+
+
+
+
+
+
 #container{
 	width:300px;
 	overflow:auto;
@@ -282,6 +295,18 @@ color: #ffffff;
     width:150px
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:600px) {
     nav{
