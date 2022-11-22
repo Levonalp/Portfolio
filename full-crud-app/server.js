@@ -38,12 +38,12 @@ app.get('/event/:id', (req, res) => {
 
 // edit
 
-app.get('/event/:_id/edit', (req, res) => {
-  Event.findById(req.params._id, (err, foundEvent) => {
+app.get('/event/:id/edit', (req, res) => {
+  Event.findById(req.params.id, (err, foundEvent) => {
     res.render(
       'edit.ejs',
       {
-        oneEvent: foundEvent
+        event: foundEvent
       }
     )
   })
@@ -69,8 +69,8 @@ app.delete('/event/:id', (req, res)=>{
 
 // PUT Requests
 
-app.put('/event/:_id', (req, res) => {
-  Event.findByIdAndUpdate(req.params._id, req.body, {new:true}, (err, updatedModel) => {
+app.put('/event/:id', (req, res) => {
+  Event.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
     res.redirect('/event')
   })
 })

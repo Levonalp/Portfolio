@@ -17,6 +17,9 @@
       year Built : <%= event.yearBuilt %><br />
       date : <%= event.date %><br />
     </div>
-    <a href="/event/:_id/edit">Edit </a>
+    <a href="/event/<%= event.id %>/edit">Edit </a>
+    <form action="/event/<%=event._id%>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE" />
+    </form>
   </body>
 </html>
