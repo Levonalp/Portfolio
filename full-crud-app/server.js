@@ -43,7 +43,7 @@ app.get('/event/:id/edit', (req, res) => {
     res.render(
       'edit.ejs',
       {
-        event: foundEvent
+        oneEvent: foundEvent
       }
     )
   })
@@ -70,7 +70,7 @@ app.delete('/event/:id', (req, res)=>{
 // PUT Requests
 
 app.put('/event/:id', (req, res) => {
-  Event.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
+  Event.findByIdAndUpdate(req.params.id, req.body, {new:true},(err, updatedModel) => {
     res.redirect('/event')
   })
 })

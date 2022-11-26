@@ -5,7 +5,9 @@ const eventSchema = new mongoose.Schema({
   street: String,
   sqft: String,
   yearBuilt: String,
-  img: String
+  img: String,
+  price: String,
+  details:String
 })
 
 const eventCollection = mongoose.model('Event', eventSchema)
